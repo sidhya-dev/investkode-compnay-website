@@ -64,8 +64,7 @@
     (function() {
       try {
         var saved = localStorage.getItem('ik-theme');
-        var prefDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var theme = saved || (prefDark ? 'dark' : 'light');
+        var theme = saved === 'dark' ? 'dark' : 'light';
         document.documentElement.setAttribute('data-theme', theme);
       } catch(e) {}
     })();
@@ -89,24 +88,6 @@
       --card-bg:      #ffffff;
       --card-feat-bg: #fff8f3;
       --card-feat-bd: #f97316;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root:not([data-theme="light"]) {
-        --bg:           #111110;
-        --bg2:          #1a1918;
-        --bg3:          #1f1e1c;
-        --text:         #f0ede8;
-        --muted:        #9a9690;
-        --border:       rgba(255,255,255,0.08);
-        --accent:       #fb923c;
-        --accent-d:     #f97316;
-        --accent-glow:  rgba(251,146,60,0.1);
-        --rule:         rgba(251,146,60,0.4);
-        --nav-bg:       rgba(17,17,16,0.97);
-        --card-bg:      #1a1918;
-        --card-feat-bg: #1f1510;
-        --card-feat-bd: #fb923c;
-      }
     }
     :root[data-theme="dark"] {
       --bg:           #111110;
@@ -846,8 +827,7 @@
   // ── Professional Theme Toggler ──
   (function initThemeToggle() {
     function toggleTheme() {
-      const current = document.documentElement.getAttribute('data-theme') || 
-        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
       const next = current === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', next);
       try { localStorage.setItem('ik-theme', next); } catch(e) {}

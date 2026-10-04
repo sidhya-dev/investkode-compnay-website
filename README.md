@@ -91,19 +91,15 @@ npx serve -p 8080 .
 
 ## 🎨 Design System & Theme Engine
 
-### Zero-Flicker Dark / Light Theming
-The site features an institutional-grade dark & light mode switcher. To prevent any Flash of Unstyled Theme (FOUT), every HTML page includes an immediate inline script in `<head>`:
+### Default Light Theming with Zero-Flicker Toggle
+The site strictly defaults to **Light Theme** for all first-time visitors (ignoring OS dark mode auto-sync to ensure the signature crisp white and brand orange aesthetic). If a visitor explicitly toggles to Dark Mode, their choice is persisted in `localStorage`. To prevent any Flash of Unstyled Theme (FOUT), every HTML page includes an immediate inline script in `<head>`:
 
 ```javascript
 (function() {
   try {
     var savedTheme = localStorage.getItem('ik-theme');
-    var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
+    var theme = savedTheme === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
   } catch (e) {}
 })();
 ```

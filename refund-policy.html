@@ -40,8 +40,7 @@
     (function() {
       try {
         var saved = localStorage.getItem('ik-theme');
-        var prefDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        var theme = saved || (prefDark ? 'dark' : 'light');
+        var theme = saved === 'dark' ? 'dark' : 'light';
         document.documentElement.setAttribute('data-theme', theme);
       } catch(e) {}
     })();
@@ -51,7 +50,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700;800&amp;display=swap" rel="stylesheet" />
   <style>
     :root { --bg:#ffffff; --bg2:#fafaf9; --text:#0d0d0d; --muted:#5a5a5a; --border:rgba(0,0,0,0.08); --accent:#f97316; --accent-d:#c2410c; --rule:rgba(249,115,22,0.35); --nav-bg:rgba(255,255,255,0.97); }
-    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#111110; --bg2:#1a1918; --text:#f0ede8; --muted:#9a9690; --border:rgba(255,255,255,0.08); --accent:#fb923c; --accent-d:#f97316; --rule:rgba(251,146,60,0.4); --nav-bg:rgba(17,17,16,0.97); } }
     :root[data-theme="dark"] { --bg:#111110; --bg2:#1a1918; --text:#f0ede8; --muted:#9a9690; --border:rgba(255,255,255,0.08); --accent:#fb923c; --accent-d:#f97316; --rule:rgba(251,146,60,0.4); --nav-bg:rgba(17,17,16,0.97); }
     *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
     body { font-family:system-ui,-apple-system,'Segoe UI',sans-serif; background:var(--bg); color:var(--text); line-height:1.7; -webkit-font-smoothing:antialiased; }
@@ -602,8 +600,7 @@
   // ── Professional Theme Toggler ──
   (function initThemeToggle() {
     function toggleTheme() {
-      const current = document.documentElement.getAttribute('data-theme') || 
-        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
       const next = current === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', next);
       try { localStorage.setItem('ik-theme', next); } catch(e) {}
