@@ -109,14 +109,14 @@ Tokens are defined in the `:root` and `:root[data-theme="dark"]` selectors:
 
 | Token | Light Theme | Dark Theme | Purpose |
 |---|---|---|---|
-| `--bg` | `#ffffff` | `#111110` | Primary page background |
-| `--bg2` | `#fafaf9` | `#1a1918` | Card & surface background |
-| `--text` | `#0d0d0d` | `#f0ede8` | Primary body text |
-| `--muted` | `#5a5a5a` | `#9a9690` | Secondary & subtext |
+| `--bg` | `#ffffff` | `#0a0f1d` | Primary page background |
+| `--bg2` | `#f8fafc` | `#111827` | Card & surface background |
+| `--text` | `#0f172a` | `#f1f5f9` | Primary body text |
+| `--muted` | `#64748b` | `#94a3b8` | Secondary & subtext |
 | `--border` | `rgba(0,0,0,0.08)` | `rgba(255,255,255,0.08)` | Card borders & dividers |
 | `--accent` | `#f97316` (Warm Orange) | `#fb923c` | Primary brand accent & highlights |
 | `--accent-d` | `#c2410c` (Deep Amber) | `#f97316` | Action buttons & badges |
-| `--accent-glow` | `rgba(249,115,22,0.1)` | `rgba(251,146,60,0.15)` | Hover states & subtle pills |
+| `--accent-glow` | `rgba(249,115,22,0.12)` | `rgba(251,146,60,0.14)` | Hover states & subtle pills |
 
 ### Theme Toggler Micro-Interaction
 - Desktop navbar button: `#themeToggle`
