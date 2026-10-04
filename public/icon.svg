@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Brand Orange Gradient for the Arrow & Ascending Bars -->
+    <linearGradient id="brandOrangeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c2410c" />
+      <stop offset="45%" stop-color="#ea580c" />
+      <stop offset="85%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+
+    <!-- Deep Charcoal / Slate Gradient for the Left Pillar -->
+    <linearGradient id="brandDarkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Vertical Pillar / Building -->
+  <path
+    d="M 152 400 L 152 144 L 204 124 L 204 290 L 178 316 L 178 400 Z"
+    fill="url(#brandDarkGrad)"
+  />
+
+  <!-- Ascending Bar 1 (Left lower chart bar) -->
+  <path
+    d="M 186 312 L 230 268 L 230 338 L 186 382 Z"
+    fill="url(#brandOrangeGrad)"
+  />
+
+  <!-- Ascending Bar 2 (Middle chart bar) -->
+  <path
+    d="M 238 244 L 282 200 L 282 300 L 238 344 Z"
+    fill="url(#brandOrangeGrad)"
+  />
+
+  <!-- Main Diagonal Rising Arrow Body -->
+  <path
+    d="M 190 400 L 372 160 L 350 144 L 400 132 L 392 188 L 372 160 L 218 400 Z"
+    fill="url(#brandOrangeGrad)"
+  />
+
+  <!-- Lower Right Leg of 'K' -->
+  <path
+    d="M 276 288 L 338 350 L 378 400 L 318 400 L 254 316 Z"
+    fill="url(#brandOrangeGrad)"
+  />
+</svg>

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — InvestKode AI | Democratizing Equity Research</title>
+  <meta name="description" content="Learn about InvestKode AI by FinAI Global. We are democratizing institutional-grade equity research for Indian retail investors across NSE & BSE." />
+  <meta name="keywords" content="About InvestKode, FinAI Global, Indian stock research team, Dalal Street equity analytics, retail investor democratization" />
+  <meta name="author" content="FinAI Global" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://investkode.ai/about.html" />
+  <meta name="theme-color" content="#c2410c" />
+
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png?v=2" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png?v=2" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/public/favicon-48x48.png?v=2" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/public/icon-192.png?v=2" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/public/icon-512.png?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png?v=2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2" />
+  <link rel="manifest" href="/site.webmanifest?v=2" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://investkode.ai/about.html" />
+  <meta property="og:title" content="About Us — InvestKode AI | Democratizing Equity Research" />
+  <meta property="og:description" content="Learn about InvestKode AI by FinAI Global. Democratizing institutional-grade equity research for Indian retail investors." />
+  <meta property="og:image" content="https://investkode.ai/public/logo-brand.png" />
+  <meta property="og:site_name" content="InvestKode AI" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Us — InvestKode AI | Democratizing Equity Research" />
+  <meta name="twitter:description" content="Democratizing institutional-grade equity research for Indian retail investors." />
+  <meta name="twitter:image" content="https://investkode.ai/public/logo-brand.png" />
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About InvestKode AI",
+    "url": "https://investkode.ai/about.html",
+    "description": "Democratizing institutional-grade equity research for Indian retail investors.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "FinAI Global",
+      "url": "https://investkode.ai",
+      "logo": "https://investkode.ai/public/logo-brand.png"
+    }
+  }
+  </script>
+
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('ik-theme');
+        var prefDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch(e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#ffffff; --bg2:#fafaf9; --bg3:#f5f4f2; --text:#0d0d0d; --muted:#5a5a5a; --border:rgba(0,0,0,0.08); --accent:#f97316; --accent-d:#c2410c; --accent-glow:rgba(249,115,22,0.08); --rule:rgba(249,115,22,0.35); --nav-bg:rgba(255,255,255,0.97); }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#111110; --bg2:#1a1918; --bg3:#1f1e1c; --text:#f0ede8; --muted:#9a9690; --border:rgba(255,255,255,0.08); --accent:#fb923c; --accent-d:#f97316; --accent-glow:rgba(251,146,60,0.08); --rule:rgba(251,146,60,0.4); --nav-bg:rgba(17,17,16,0.97); } }
+    :root[data-theme="dark"] { --bg:#111110; --bg2:#1a1918; --bg3:#1f1e1c; --text:#f0ede8; --muted:#9a9690; --border:rgba(255,255,255,0.08); --accent:#fb923c; --accent-d:#f97316; --accent-glow:rgba(251,146,60,0.08); --rule:rgba(251,146,60,0.4); --nav-bg:rgba(17,17,16,0.97); }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:system-ui,-apple-system,'Segoe UI',sans-serif; background:var(--bg); color:var(--text); line-height:1.7; -webkit-font-smoothing:antialiased; }
+    a { color:var(--accent); }
+    /* ── LOGO ── */
+    .nav-logo {
+      display: inline-flex;
+      text-decoration: none;
+      cursor: pointer;
+      user-select: none;
+      flex-shrink: 0;
+    }
+    .nav-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .nav-brand-icon {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(249,115,22,0.25));
+      transition: transform 0.2s ease;
+    }
+    .nav-logo:hover .nav-brand-icon {
+      transform: scale(1.05);
+    }
+    .nav-logo-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+    }
+    .wordmark {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.75rem;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      display: flex;
+      align-items: baseline;
+      margin-top: calc(0.45em + 0.25cm - 0.7cm);
+    }
+    .wordmark span { font-weight: 300; color: var(--text); }
+    .wordmark strong { font-weight: 800; color: var(--text); }
+    .wordmark em { font-style: normal; font-weight: 800; color: var(--accent); margin-left: calc(0.35em - 0.1cm); }
+
+    .logo-accent-wrapper {
+      position: relative;
+      width: 100%;
+      height: 14px;
+      margin-top: calc(0.2em - 0.25cm);
+      overflow: visible;
+    }
+    .logo-accent-svg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+    .logo-accent-dot {
+      position: absolute;
+      right: calc(-7px + 0.2cm);
+      top: calc(-5px + 0.15cm + 0.85pt);
+      width: 10px;
+      height: 8px;
+      filter: drop-shadow(0 0 3px #f97316) drop-shadow(0 0 6px #fb923c);
+      transform: rotate(-28deg);
+      transform-origin: left center;
+    }
+    .logo-tagline {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.25em;
+    }
+
+    /* NAV */
+    body > nav { position:sticky; top:0; z-index:100; background:var(--nav-bg); border-bottom:1px solid var(--border); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); }
+    .nav-inner { max-width:1100px; margin:0 auto; padding:0.75rem 2rem; display:flex; align-items:center; justify-content:space-between; gap:1.5rem; }
+    .nav-links { display:flex; align-items:center; gap:0.15rem; flex:1; justify-content:center; }
+    .nav-links a { font-size:0.875rem; font-weight:500; color:var(--muted); text-decoration:none; padding:0.4rem 0.85rem; border-radius:6px; transition:color 0.15s,background 0.15s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--text); background:var(--accent-glow); }
+    .nav-links a.active { color:var(--accent); font-weight:600; background:var(--accent-glow); }
+    /* ── NAV ACTIONS & MOBILE TOGGLE ── */
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    /* ── PROFESSIONAL THEME TOGGLER ── */
+    .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 9px;
+      border: 1px solid var(--border);
+      background: var(--bg2);
+      color: var(--text);
+      cursor: pointer;
+      position: relative;
+      transition: background 0.2s, border-color 0.2s, transform 0.15s, color 0.2s, box-shadow 0.2s;
+      padding: 0;
+      flex-shrink: 0;
+    }
+    .theme-toggle:hover {
+      background: var(--accent-glow);
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(249,115,22,0.15);
+    }
+    .theme-toggle-icon {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+    }
+    :root:not([data-theme="dark"]) .sun-icon {
+      opacity: 0;
+      transform: rotate(90deg) scale(0.5);
+      pointer-events: none;
+    }
+    :root:not([data-theme="dark"]) .moon-icon {
+      opacity: 1;
+      transform: rotate(0) scale(1);
+    }
+    :root[data-theme="dark"] .moon-icon {
+      opacity: 0;
+      transform: rotate(-90deg) scale(0.5);
+      pointer-events: none;
+    }
+    :root[data-theme="dark"] .sun-icon {
+      opacity: 1;
+      transform: rotate(0) scale(1);
+      color: #fb923c;
+    }
+
+    .mobile-theme-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.65rem 0.85rem;
+      border-radius: 10px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      margin-bottom: 0.25rem;
+    }
+    .mobile-theme-label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .nav-cta { background:var(--accent-d); color:#fff; padding:0.6rem 1.4rem; border-radius:6px; font-size:0.9rem; font-weight:600; text-decoration:none; flex-shrink:0; transition:background 0.2s,transform 0.15s; }
+    .nav-cta:hover { background:var(--accent); transform:translateY(-1px); }
+
+    .nav-toggle {
+      display: none;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-toggle:hover, .nav-toggle:focus-visible {
+      background: var(--bg2);
+      border-color: var(--accent);
+    }
+    .hamburger-line {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+      transform-origin: center;
+    }
+    .nav-toggle.active .hamburger-line:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .nav-toggle.active .hamburger-line:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    .nav-toggle.active .hamburger-line:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* ── MOBILE MENU DROPDOWN ── */
+    .mobile-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      box-shadow: 0 16px 36px rgba(0,0,0,0.18);
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+      z-index: 99;
+    }
+    .mobile-menu.open {
+      max-height: 480px;
+      opacity: 1;
+    }
+    .mobile-menu-inner {
+      padding: 1.25rem 1.5rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .mobile-nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .mobile-link {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      color: var(--text);
+      text-decoration: none;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      transition: background 0.15s, color 0.15s, transform 0.15s;
+    }
+    .mobile-link:hover, .mobile-link.active {
+      background: var(--accent-glow);
+      color: var(--accent);
+      transform: translateX(4px);
+    }
+    .mobile-link-icon {
+      font-size: 1.2rem;
+    }
+    .mobile-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 0.25rem 0;
+    }
+    .mobile-legal-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      padding: 0 0.5rem;
+    }
+    .mobile-legal-links a {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .mobile-legal-links a:hover {
+      color: var(--accent);
+    }
+    .mobile-cta-wrap {
+      margin-top: 0.5rem;
+    }
+    .mobile-cta {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: linear-gradient(135deg, #c2410c, #f97316);
+      color: #fff !important;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(249,115,22,0.3);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .mobile-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(249,115,22,0.45);
+    }
+
+    /* PAGE HERO */
+    .page-hero { padding:5rem 2rem 4rem; border-bottom:1px solid var(--border); position:relative; }
+    .page-hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 80% 60% at 20% 50%,rgba(249,115,22,0.05),transparent); pointer-events:none; }
+    .page-hero > * { position:relative; }
+    .hero-inner { max-width:1100px; margin:0 auto; }
+    .page-eyebrow { font-family:'Space Grotesk',sans-serif; font-size:0.7rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); margin-bottom:1rem; }
+    .page-title { font-family:'Space Grotesk',sans-serif; font-size:clamp(2.2rem,5vw,3.4rem); font-weight:800; letter-spacing:-0.04em; line-height:1.1; color:var(--text); margin-bottom:1.25rem; max-width:680px; }
+    .page-sub { font-size:1.1rem; color:var(--muted); max-width:560px; line-height:1.65; margin-bottom:2rem; }
+    .hero-cta { display:inline-block; background:linear-gradient(135deg,#c2410c,#f97316); color:#fff; padding:0.8rem 1.75rem; border-radius:8px; font-family:'Space Grotesk',sans-serif; font-size:0.9375rem; font-weight:700; text-decoration:none; transition:box-shadow 0.2s,transform 0.15s; box-shadow:0 4px 16px rgba(249,115,22,0.28); }
+    .hero-cta:hover { box-shadow:0 6px 24px rgba(249,115,22,0.4); transform:translateY(-1px); }
+
+    /* SECTIONS */
+    .content-section { padding:4rem 2rem; border-top:1px solid var(--border); }
+    .content-section.alt { background:var(--bg2); }
+    .section-inner { max-width:1100px; margin:0 auto; }
+    .section-eyebrow { font-family:'Space Grotesk',sans-serif; font-size:0.7rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); margin-bottom:0.75rem; }
+    .section-title { font-family:'Space Grotesk',sans-serif; font-size:clamp(1.5rem,3vw,2rem); font-weight:800; letter-spacing:-0.03em; color:var(--text); margin-bottom:0.75rem; }
+    .section-body { font-size:0.9375rem; color:var(--muted); max-width:640px; line-height:1.7; }
+
+    /* FEATURE GRID */
+    .feature-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.25rem; margin-top:2.5rem; }
+    .feature-item { background:var(--bg); border:1px solid var(--border); border-radius:14px; padding:1.5rem; transition:border-color 0.2s,transform 0.2s; }
+    .feature-item:hover { border-color:var(--accent); transform:translateY(-3px); }
+    .feature-icon { font-size:1.5rem; margin-bottom:0.75rem; }
+    .feature-item h3 { font-family:'Space Grotesk',sans-serif; font-size:0.9375rem; font-weight:700; color:var(--text); margin-bottom:0.4rem; }
+    .feature-item p { font-size:0.875rem; color:var(--muted); line-height:1.6; }
+
+    /* WHO IT IS FOR */
+    .audience-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; margin-top:2rem; }
+    .audience-item { padding:1.25rem; border-radius:10px; background:var(--bg3); border:1px solid var(--border); font-size:0.9rem; color:var(--muted); }
+    .audience-item strong { display:block; color:var(--text); font-family:'Space Grotesk',sans-serif; font-size:0.9rem; font-weight:700; margin-bottom:0.3rem; }
+
+    /* NOT SECTION */
+    .not-list { margin-top:1.25rem; display:flex; flex-direction:column; gap:0.5rem; }
+    .not-item { display:flex; align-items:flex-start; gap:0.75rem; font-size:0.9rem; color:var(--muted); }
+    .not-icon { flex-shrink:0; font-size:1rem; margin-top:1px; }
+
+    /* ENTITY STRIP */
+    .entity-strip { background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:2rem; text-align:center; }
+    .entity-strip p { font-size:0.875rem; color:var(--muted); line-height:1.8; }
+    .entity-strip a { color:var(--accent); text-decoration:none; }
+
+    /* FOOTER */
+    .contact-block { max-width:1100px; margin:0 auto; padding:3rem 2rem 2rem; border-top:1px solid var(--border); font-size:0.875rem; color:var(--muted); }
+    .contact-block a { color:var(--accent); text-decoration:none; }
+    .footer-links { display:flex; flex-wrap:wrap; gap:0.5rem 1.5rem; margin-bottom:1.25rem; }
+    .footer-links a { font-size:0.83rem; color:var(--muted); text-decoration:none; transition:color 0.15s; }
+    .footer-links a:hover { color:var(--accent); }
+    .footer-legal { font-size:0.8rem; line-height:1.7; }
+
+    @media (max-width:768px) {
+      .nav-inner { padding: 0.65rem 1.25rem; }
+      .nav-logo-wrap { gap: 0.55rem; }
+      .nav-brand-icon { width: 32px; height: 32px; }
+      .wordmark { font-size: 1.35rem; }
+      .logo-tagline { font-size: 0.52rem; letter-spacing: 0.1em; white-space: nowrap; }
+      .nav-cta { padding: 0.45rem 0.85rem; font-size: 0.8rem; }
+      .nav-links { display: none !important; }
+      .nav-toggle { display: flex; }
+      .mobile-menu { display: block; }
+    }
+    @media (max-width:400px) {
+      .nav-logo-wrap { gap: 0.45rem; }
+      .nav-brand-icon { width: 26px; height: 26px; }
+      .wordmark { font-size: 1.15rem; }
+      .logo-tagline { font-size: 0.44rem; letter-spacing: 0.08em; }
+      .nav-cta { padding: 0.4rem 0.65rem; font-size: 0.74rem; }
+      .nav-inner { padding: 0.55rem 0.85rem; gap: 0.4rem; }
+      .nav-toggle { width: 36px; height: 36px; }
+    }
+    @media (max-width:640px) { .page-hero { padding:3rem 1.25rem 3rem; } .content-section { padding:2.5rem 1.25rem; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/" aria-label="InvestKode AI Home">
+      <div class="nav-logo-wrap">
+        <img src="/public/icon.png?v=2" alt="InvestKode AI Logo" class="nav-brand-icon" width="40" height="40" />
+        <div class="nav-logo-text">
+          <div class="wordmark"><span>Invest</span><strong>Kode</strong><em> AI</em></div>
+          <div class="logo-accent-wrapper">
+            <svg class="logo-accent-svg" viewBox="0 0 100 14" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="navAccentGrad" x1="0" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#c2410c"/>
+                  <stop offset="55%" stop-color="#f97316"/>
+                  <stop offset="85%" stop-color="#fb923c"/>
+                  <stop offset="100%" stop-color="#fb923c" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path d="M 0,10 L 82,10 C 91,10 97,3 100,2" stroke="url(#navAccentGrad)" stroke-width="2" fill="none" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <svg class="logo-accent-dot" viewBox="0 0 10 8" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 1,1 L 8,4 L 1,7" stroke="#f97316" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="logo-tagline">Equity Intelligence Platform</div>
+        </div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="/pricing.html">Pricing</a>
+      <a href="/about.html" class="active">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light theme" title="Toggle theme (Light / Dark)">
+        <span class="theme-toggle-icon sun-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+        </span>
+        <span class="theme-toggle-icon moon-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </span>
+      </button>
+      <a href="https://app.investkode.ai" class="nav-cta">Start Free</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu Dropdown -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <div class="mobile-theme-row">
+        <span class="mobile-theme-label">Appearance</span>
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle dark or light theme">
+          <span class="theme-toggle-icon sun-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+              <path d="m6.34 17.66-1.41 1.41"></path>
+              <path d="m19.07 4.93-1.41 1.41"></path>
+            </svg>
+          </span>
+          <span class="theme-toggle-icon moon-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div class="mobile-nav-links">
+        <a href="/pricing.html" class="mobile-link">Pricing</a>
+        <a href="/about.html" class="mobile-link active">About Us</a>
+        <a href="/contact.html" class="mobile-link">Contact Us</a>
+      </div>
+      <div class="mobile-divider"></div>
+      <div class="mobile-legal-links">
+        <a href="/terms.html">Terms of Service</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/refund-policy.html">Refund Policy</a>
+      </div>
+      <div class="mobile-cta-wrap">
+        <a href="https://app.investkode.ai" class="mobile-cta">Launch InvestKode Free &rarr;</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="hero-inner">
+    <p class="page-eyebrow">About InvestKode</p>
+    <h1 class="page-title">AI-native equity analysis for Indian investors</h1>
+    <p class="page-sub">InvestKode brings company filings, annual reports, earnings call transcripts and financial data for listed Indian companies into one place, and lets you ask questions of that material in plain language.</p>
+    <a href="https://app.investkode.ai" class="hero-cta">Start Free &rarr;</a>
+  </div>
+</header>
+
+<section class="content-section">
+  <div class="section-inner">
+    <p class="section-eyebrow">What You Get</p>
+    <h2 class="section-title">Everything you need to study companies from primary sources</h2>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <div class="feature-icon">&#129302;</div>
+        <h3>AI Analysis Agent</h3>
+        <p>Ask questions about listed Indian companies in plain language. Get answers with citations to underlying filings and reports.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">&#128269;</div>
+        <h3>Document Search</h3>
+        <p>Search across annual reports, investor presentations, regulatory filings and earnings call transcripts with instant retrieval.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">&#128200;</div>
+        <h3>Financial Data</h3>
+        <p>Key metrics and financial data for listed Indian companies — balance sheets, income statements, ratios and more.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">&#128197;</div>
+        <h3>Watchlist &amp; Calendar</h3>
+        <p>Track the companies you follow. Earnings calls and corporate actions sync to your Google Calendar automatically.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">&#127925;</div>
+        <h3>Live Earnings Calls</h3>
+        <p>Listen live to quarterly earnings calls for 4,000+ listed Indian companies, with AI-assisted transcripts and summaries.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">&#128101;</div>
+        <h3>Team Workspaces</h3>
+        <p>Shared workspaces for teams working on investment research together. Available on the Team plan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section alt">
+  <div class="section-inner">
+    <p class="section-eyebrow">Who It Is For</p>
+    <h2 class="section-title">Built for people who study companies seriously</h2>
+    <p class="section-body">Individual investors, analysts and small research teams who want to study companies from primary sources, faster.</p>
+    <div class="audience-grid">
+      <div class="audience-item"><strong>Individual Investors</strong>Who want to do their own research before investing</div>
+      <div class="audience-item"><strong>Equity Analysts</strong>Who need fast access to filings, concalls, and data</div>
+      <div class="audience-item"><strong>Research Teams</strong>Small teams doing shared investment research</div>
+      <div class="audience-item"><strong>Finance Students</strong>Learning to analyse companies from primary sources</div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="section-inner">
+    <p class="section-eyebrow">What InvestKode Is Not</p>
+    <h2 class="section-title">An information and analysis tool. Not an advisor.</h2>
+    <p class="section-body">InvestKode is a tool for research and analysis. There are important things it does not do.</p>
+    <div class="not-list">
+      <div class="not-item"><span class="not-icon">&#10060;</span><span>InvestKode does not give <strong>investment advice</strong> or recommendations to buy, sell or hold any security</span></div>
+      <div class="not-item"><span class="not-icon">&#10060;</span><span>InvestKode does not provide <strong>portfolio management</strong> or manage client funds</span></div>
+      <div class="not-item"><span class="not-icon">&#10060;</span><span>InvestKode does not <strong>execute trades</strong> or connect to brokerages</span></div>
+      <div class="not-item"><span class="not-icon">&#10060;</span><span>Outputs of the AI agent are generated from public filings and may contain errors &mdash; they are not research reports</span></div>
+    </div>
+    <p style="margin-top:1.5rem;font-size:0.875rem;color:var(--muted);">Decisions you make based on analysis from InvestKode are your own. Investments in securities are subject to market risks. Read all related documents carefully before investing.</p>
+  </div>
+</section>
+
+<div class="entity-strip">
+  <p>InvestKode is operated by <strong>FinAI Global</strong>, a partnership firm based in Mumbai, India.<br>
+  A171, Brookhaven, JVLR, Mumbai 400060, India &nbsp;&middot;&nbsp; <a href="mailto:support@investkode.ai">support@investkode.ai</a></p>
+</div>
+
+<div class="contact-block">
+  <div class="footer-links">
+    <a href="/pricing.html">Pricing</a>
+    <a href="/about.html">About Us</a>
+    <a href="/contact.html">Contact Us</a>
+    <a href="/terms.html">Terms of Service</a>
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/refund-policy.html">Refund &amp; Cancellation Policy</a>
+  </div>
+  <div class="footer-legal">
+    InvestKode is operated by FinAI Global, A171, Brookhaven, JVLR, Mumbai 400060, India.<br>
+    InvestKode provides information and analysis tools only and does not provide investment advice. Investments in securities are subject to market risks.<br>
+    GSTIN: 27AALFF2002N1ZF &nbsp;&middot;&nbsp; &copy; 2026 FinAI Global. All rights reserved.
+  </div>
+</div>
+
+<script>
+  // ── Mobile Navigation Toggle ──
+  const navToggle = document.getElementById('navToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (navToggle && mobileMenu) {
+    navToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = mobileMenu.classList.toggle('open');
+      navToggle.classList.toggle('active', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.addEventListener('click', (e) => {
+      if (!navToggle.contains(e.target) && !mobileMenu.contains(e.target) && mobileMenu.classList.contains('open')) {
+        mobileMenu.classList.remove('open');
+        navToggle.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+        mobileMenu.classList.remove('open');
+        navToggle.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // ── Professional Theme Toggler ──
+  (function initThemeToggle() {
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ik-theme', next); } catch(e) {}
+    }
+    document.querySelectorAll('.theme-toggle').forEach(btn => {
+      btn.addEventListener('click', toggleTheme);
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — InvestKode AI</title>
+  <meta name="description" content="Privacy Policy for InvestKode AI. Information on user data collection, security, Google user data compliance, and data subject rights under Indian law." />
+  <meta name="keywords" content="InvestKode privacy policy, FinAI Global data security, user data protection India, IT Act compliance" />
+  <meta name="author" content="FinAI Global" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://investkode.ai/privacy.html" />
+  <meta name="theme-color" content="#c2410c" />
+
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png?v=2" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png?v=2" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/public/favicon-48x48.png?v=2" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/public/icon-192.png?v=2" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/public/icon-512.png?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png?v=2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2" />
+  <link rel="manifest" href="/site.webmanifest?v=2" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://investkode.ai/privacy.html" />
+  <meta property="og:title" content="Privacy Policy — InvestKode AI" />
+  <meta property="og:description" content="Privacy Policy for InvestKode AI. User data collection, security, and data protection compliance." />
+  <meta property="og:image" content="https://investkode.ai/public/logo-brand.png" />
+  <meta property="og:site_name" content="InvestKode AI" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Privacy Policy — InvestKode AI" />
+  <meta name="twitter:description" content="Privacy Policy for InvestKode AI. User data collection, security, and data protection compliance." />
+  <meta name="twitter:image" content="https://investkode.ai/public/logo-brand.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700;800&display=swap" rel="stylesheet" />
+
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('ik-theme');
+        var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <style>
+    :root {
+      --bg:       #ffffff;
+      --bg2:      #fafaf9;
+      --text:     #0d0d0d;
+      --muted:    #5a5a5a;
+      --border:   rgba(0,0,0,0.08);
+      --accent:   #f97316;
+      --accent-d: #c2410c;
+      --rule:     rgba(249,115,22,0.35);
+      --nav-bg:   rgba(255,255,255,0.97);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:       #111110;
+        --bg2:      #1a1918;
+        --text:     #f0ede8;
+        --muted:    #9a9690;
+        --border:   rgba(255,255,255,0.08);
+        --accent:   #fb923c;
+        --accent-d: #f97316;
+        --rule:     rgba(251,146,60,0.4);
+        --nav-bg:   rgba(17,17,16,0.97);
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg:       #111110;
+      --bg2:      #1a1918;
+      --text:     #f0ede8;
+      --muted:    #9a9690;
+      --border:   rgba(255,255,255,0.08);
+      --accent:   #fb923c;
+      --accent-d: #f97316;
+      --rule:     rgba(251,146,60,0.4);
+      --nav-bg:   rgba(17,17,16,0.97);
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── LOGO ── */
+    .nav-logo {
+      display: inline-flex;
+      text-decoration: none;
+      cursor: pointer;
+      user-select: none;
+      flex-shrink: 0;
+    }
+    .nav-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .nav-brand-icon {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(249,115,22,0.25));
+      transition: transform 0.2s ease;
+    }
+    .nav-logo:hover .nav-brand-icon {
+      transform: scale(1.05);
+    }
+    .nav-logo-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+    }
+    .wordmark {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.75rem;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      display: flex;
+      align-items: baseline;
+      margin-top: calc(0.45em + 0.25cm - 0.7cm);
+    }
+    .wordmark span { font-weight: 300; color: var(--text); }
+    .wordmark strong { font-weight: 800; color: var(--text); }
+    .wordmark em { font-style: normal; font-weight: 800; color: var(--accent); margin-left: calc(0.35em - 0.1cm); }
+
+    .logo-accent-wrapper {
+      position: relative;
+      width: 100%;
+      height: 14px;
+      margin-top: calc(0.2em - 0.25cm);
+      overflow: visible;
+    }
+    .logo-accent-svg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+    .logo-accent-dot {
+      position: absolute;
+      right: calc(-7px + 0.2cm);
+      top: calc(-5px + 0.15cm + 0.85pt);
+      width: 10px;
+      height: 8px;
+      filter: drop-shadow(0 0 3px #f97316) drop-shadow(0 0 6px #fb923c);
+      transform: rotate(-28deg);
+      transform-origin: left center;
+    }
+    .logo-tagline {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.25em;
+    }
+
+    /* NAV */
+    body > nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--nav-bg);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.75rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.15rem;
+      flex: 1;
+      justify-content: center;
+    }
+    .nav-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 0.4rem 0.85rem;
+      border-radius: 6px;
+      transition: color 0.15s, background 0.15s;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--text);
+      background: var(--accent-glow, rgba(249,115,22,0.1));
+    }
+    .nav-links a.active {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .nav-cta {
+      background: var(--accent-d);
+      color: #fff;
+      padding: 0.6rem 1.4rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      flex-shrink: 0;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .nav-cta:hover {
+      background: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    /* ── Professional Theme Toggler ── */
+    .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 9px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      cursor: pointer;
+      outline: none;
+      padding: 0;
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+      flex-shrink: 0;
+    }
+    .theme-toggle:hover {
+      background: var(--accent-glow, rgba(249,115,22,0.1));
+      border-color: var(--accent);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(249,115,22,0.15);
+    }
+    .theme-toggle-icon {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+    }
+    :root:not([data-theme="dark"]) .sun-icon {
+      opacity: 0;
+      transform: rotate(90deg) scale(0.5);
+      pointer-events: none;
+    }
+    :root:not([data-theme="dark"]) .moon-icon {
+      opacity: 1;
+      transform: rotate(0) scale(1);
+    }
+    :root[data-theme="dark"] .moon-icon {
+      opacity: 0;
+      transform: rotate(-90deg) scale(0.5);
+      pointer-events: none;
+    }
+    :root[data-theme="dark"] .sun-icon {
+      opacity: 1;
+      transform: rotate(0) scale(1);
+      color: #fb923c;
+    }
+
+    .mobile-theme-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.65rem 0.85rem;
+      border-radius: 10px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      margin-bottom: 0.25rem;
+    }
+    .mobile-theme-label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg2);
+      cursor: pointer;
+      padding: 0;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .nav-toggle:hover {
+      background: var(--accent-glow);
+      border-color: var(--accent);
+    }
+    .hamburger-line {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+      transform-origin: center;
+    }
+    .nav-toggle.active .hamburger-line:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .nav-toggle.active .hamburger-line:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    .nav-toggle.active .hamburger-line:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* ── MOBILE MENU DROPDOWN ── */
+    .mobile-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      box-shadow: 0 16px 36px rgba(0,0,0,0.18);
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+      z-index: 99;
+    }
+    .mobile-menu.open {
+      max-height: 480px;
+      opacity: 1;
+    }
+    .mobile-menu-inner {
+      padding: 1.25rem 1.5rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .mobile-nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .mobile-link {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      color: var(--text);
+      text-decoration: none;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      transition: background 0.15s, color 0.15s, transform 0.15s;
+    }
+    .mobile-link:hover, .mobile-link.active {
+      background: var(--accent-glow);
+      color: var(--accent);
+      transform: translateX(4px);
+    }
+    .mobile-link-icon {
+      font-size: 1.15rem;
+      line-height: 1;
+    }
+    .mobile-link-text {
+      flex: 1;
+    }
+    .mobile-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 0.25rem 0;
+    }
+    .mobile-legal-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      padding: 0 0.5rem;
+    }
+    .mobile-legal-links a {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .mobile-legal-links a:hover {
+      color: var(--accent);
+    }
+    .mobile-cta-wrap {
+      margin-top: 0.25rem;
+    }
+    .mobile-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0.85rem 1.25rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 10px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(249,115,22,0.35);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .mobile-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(249,115,22,0.45);
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    .page-header {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .page-eyebrow {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .page-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: var(--text);
+      text-wrap: balance;
+      margin-bottom: 1rem;
+    }
+    .page-meta {
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      padding-left: 1.25rem;
+      border-left: 2px solid var(--rule);
+    }
+    section h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+    section p {
+      font-size: 0.9375rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    section p:last-child { margin-bottom: 0; }
+    section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0;
+    }
+    section ul li {
+      font-size: 0.9375rem;
+      color: var(--muted);
+      padding: 0.2rem 0 0.2rem 1.1rem;
+      position: relative;
+    }
+    section ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.65em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.6;
+    }
+
+    /* Google API highlight box */
+    .google-box {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0 0.75rem;
+    }
+    .google-box h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .google-box p {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .google-box p:last-child { margin-bottom: 0; }
+
+    .scope-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      margin: 0.75rem 0;
+      overflow-x: auto;
+      display: block;
+    }
+    .scope-table th {
+      text-align: left;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text);
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .scope-table td {
+      padding: 0.5rem 0.75rem;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .scope-table tr:last-child td { border-bottom: none; }
+    code {
+      font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+      font-size: 0.8em;
+      background: var(--border);
+      padding: 0.1em 0.4em;
+      border-radius: 3px;
+      color: var(--text);
+    }
+
+    .notice {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+    }
+    .notice strong { color: var(--text); }
+
+    .contact-block {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .contact-block a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-block a:hover { text-decoration: underline; }
+
+    a { color: var(--accent); }
+
+    @media (max-width: 768px) {
+      .nav-inner { padding: 0.65rem 1.25rem; }
+      .nav-logo-wrap { gap: 0.55rem; }
+      .nav-brand-icon { width: 32px; height: 32px; }
+      .wordmark { font-size: 1.35rem; }
+      .logo-tagline { font-size: 0.52rem; letter-spacing: 0.1em; white-space: nowrap; }
+      .nav-cta { padding: 0.45rem 0.85rem; font-size: 0.8rem; }
+      .nav-links { display: none !important; }
+      .nav-toggle { display: flex; }
+      .mobile-menu { display: block; }
+    }
+    @media (max-width: 400px) {
+      .nav-logo-wrap { gap: 0.45rem; }
+      .nav-brand-icon { width: 26px; height: 26px; }
+      .wordmark { font-size: 1.15rem; }
+      .logo-tagline { font-size: 0.44rem; letter-spacing: 0.08em; }
+      .nav-cta { padding: 0.4rem 0.65rem; font-size: 0.74rem; }
+      .nav-inner { padding: 0.55rem 0.85rem; gap: 0.4rem; }
+      .nav-toggle { width: 36px; height: 36px; }
+    }
+    @media (max-width: 640px) {
+      .container { padding: 2.5rem 1.25rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/" aria-label="InvestKode AI Home">
+      <div class="nav-logo-wrap">
+        <img src="/public/icon.png?v=2" alt="InvestKode AI Logo" class="nav-brand-icon" width="40" height="40" />
+        <div class="nav-logo-text">
+          <div class="wordmark"><span>Invest</span><strong>Kode</strong><em> AI</em></div>
+          <div class="logo-accent-wrapper">
+            <svg class="logo-accent-svg" viewBox="0 0 100 14" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="navAccentGrad" x1="0" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#c2410c"/>
+                  <stop offset="55%" stop-color="#f97316"/>
+                  <stop offset="85%" stop-color="#fb923c"/>
+                  <stop offset="100%" stop-color="#fb923c" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path d="M 0,10 L 82,10 C 91,10 97,3 100,2" stroke="url(#navAccentGrad)" stroke-width="2" fill="none" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <svg class="logo-accent-dot" viewBox="0 0 10 8" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 1,1 L 8,4 L 1,7" stroke="#f97316" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="logo-tagline">Equity Intelligence Platform</div>
+        </div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="/pricing.html">Pricing</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark or light theme" title="Toggle theme (Light / Dark)">
+        <span class="theme-toggle-icon sun-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+        </span>
+        <span class="theme-toggle-icon moon-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </span>
+      </button>
+      <a href="https://app.investkode.ai" class="nav-cta">Start Free</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu Dropdown -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <div class="mobile-theme-row">
+        <span class="mobile-theme-label">Appearance</span>
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle dark or light theme">
+          <span class="theme-toggle-icon sun-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2"></path>
+              <path d="M12 20v2"></path>
+              <path d="m4.93 4.93 1.41 1.41"></path>
+              <path d="m17.66 17.66 1.41 1.41"></path>
+              <path d="M2 12h2"></path>
+              <path d="M20 12h2"></path>
+              <path d="m6.34 17.66-1.41 1.41"></path>
+              <path d="m19.07 4.93-1.41 1.41"></path>
+            </svg>
+          </span>
+          <span class="theme-toggle-icon moon-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div class="mobile-nav-links">
+        <a href="/pricing.html" class="mobile-link">Pricing</a>
+        <a href="/about.html" class="mobile-link">About Us</a>
+        <a href="/contact.html" class="mobile-link">Contact Us</a>
+      </div>
+      <div class="mobile-divider"></div>
+      <div class="mobile-legal-links">
+        <a href="/terms.html">Terms of Service</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/refund-policy.html">Refund Policy</a>
+      </div>
+      <div class="mobile-cta-wrap">
+        <a href="https://app.investkode.ai" class="mobile-cta">Launch InvestKode Free &rarr;</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <header class="page-header">
+    <p class="page-eyebrow">Legal</p>
+    <h1 class="page-title">Privacy Policy</h1>
+    <p class="page-meta">Effective date: 15 September 2026 &nbsp;·&nbsp; Last updated: 21 September 2026</p>
+  </header>
+
+  <div class="notice">
+    <strong>Your privacy matters.</strong> This policy explains what data InvestKode AI collects, how we use it, and your rights. We do not sell your personal data to third parties.
+  </div>
+
+  <section>
+    <h2>1. Who We Are</h2>
+    <p>InvestKode AI is an investment research platform that helps investors track company updates, filings, earnings events, and market news. InvestKode is operated by FinAI Global, a partnership firm with its registered address at A171, Brookhaven, JVLR, Mumbai 400060, Maharashtra, India. We can be reached at <a href="mailto:support@investkode.ai">support@investkode.ai</a>.</p>
+  </section>
+
+  <section>
+    <h2>2. Information We Collect</h2>
+    <p>We collect the following categories of information when you use InvestKode AI:</p>
+    <ul>
+      <li><strong>Account information:</strong> name and email address provided through your Google account when you sign in</li>
+      <li><strong>Google Calendar data:</strong> calendar events accessed or created via the Google Calendar API (see Section 4)</li>
+      <li><strong>Usage data:</strong> pages visited, features used, and interactions with our platform</li>
+      <li><strong>Device information:</strong> browser type, operating system, and IP address for security and analytics</li>
+      <li><strong>Communications:</strong> messages you send us via email or support channels</li>
+      <li><strong>Payment information:</strong> payments are processed by PayU. We receive the transaction ID, amount and payment status, not your card or bank credentials</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. How We Use Your Information</h2>
+    <p>We use the information we collect to:</p>
+    <ul>
+      <li>Provide, operate, and improve the InvestKode AI platform</li>
+      <li>Add company events (earnings, AGMs, analyst days) to your Google Calendar</li>
+      <li>Send you relevant company updates and alerts you subscribe to</li>
+      <li>Respond to your support requests and communications</li>
+      <li>Detect and prevent fraud, abuse, or security incidents</li>
+      <li>Comply with legal obligations</li>
+    </ul>
+    <p>We do not use your data for advertising or sell it to third parties.</p>
+  </section>
+
+  <section>
+    <h2>4. Google API Services — Limited Use &amp; AI/ML Disclosure</h2>
+    <p>InvestKode AI integrates with Google APIs, including the Google Calendar API, to provide automated calendar event scheduling and reminder features. Our use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a> and the <a href="https://developers.google.com/workspace/workspace-api-user-data-developer-policy" target="_blank" rel="noopener">Google Workspace API User Data and Developer Policy</a>, including the Limited Use requirements.</p>
+
+    <div class="google-box">
+      <h3>Google API Scopes Requested</h3>
+      <table class="scope-table">
+        <thead>
+          <tr>
+            <th>Scope</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>https://www.googleapis.com/auth/calendar.events</code></td>
+            <td>Create, update, and remove investment concall reminders on your primary calendar</td>
+          </tr>
+          <tr>
+            <td><code>https://www.googleapis.com/auth/userinfo.email</code></td>
+            <td>Verify account connection and display your connected Google email in settings</td>
+          </tr>
+          <tr>
+            <td><code>https://www.googleapis.com/auth/userinfo.profile</code></td>
+            <td>Display your profile identity during sign-in</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>We access your Google Calendar solely to write, update, or remove investment-related events that you track. We do not read, harvest, or log your existing personal calendar events, meeting contents, or attendee lists.</p>
+    </div>
+
+    <div class="google-box" style="border-left-color: #10b981; margin-top: 1rem;">
+      <h3 style="color: #10b981;">Limited Use &amp; Artificial Intelligence (AI/ML) Policy</h3>
+      <p><strong>• No AI/ML Model Training:</strong> Google Workspace user data (including any Google Calendar data, event IDs, and metadata) is <strong>never used to develop, train, tune, or improve generalized or non-personalized artificial intelligence or machine learning models</strong>. Google Calendar data is strictly segregated and air-gapped from our AI research tools, LLM Gateway, and Large Language Models (LLMs).</p>
+      <p><strong>• No Third-Party AI Transfers:</strong> Google Workspace user data is never transferred, sold, or disclosed to third-party AI model providers (including OpenAI, Azure OpenAI, Anthropic, or OpenRouter) or external data brokers.</p>
+      <p><strong>• No Advertising:</strong> Google Workspace user data is never used or transferred for serving personalized, retargeted, or interest-based advertisements.</p>
+      <p><strong>• Human Access Restrictions:</strong> Human employees or contractors are strictly prohibited from reading your Google Calendar data, unless: (1) you have provided explicit permission for resolving a specific technical support request; (2) it is required for security or anti-abuse investigations; (3) required to comply with applicable laws; or (4) the data is aggregated and anonymized for internal system health operations.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>5. Data Sharing</h2>
+    <p>We do not sell, rent, or trade your personal information. We may share data only in the following limited circumstances:</p>
+    <ul>
+      <li><strong>Service providers:</strong> trusted vendors who help us operate the platform (e.g. hosting, analytics), bound by confidentiality obligations</li>
+      <li><strong>Legal requirements:</strong> when required by applicable law, court order, or governmental authority in India</li>
+      <li><strong>Business transfers:</strong> in connection with a merger, acquisition, or sale of assets, with notice to you</li>
+      <li><strong>With your consent:</strong> for any other purpose with your explicit permission</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Data Retention</h2>
+    <p>We retain your personal data for as long as your account is active or as needed to provide our services. You may request deletion of your account and associated data at any time by emailing <a href="mailto:IT@investkode.ai">IT@investkode.ai</a>. We will delete or anonymize your data within 30 days of a verified request, unless retention is required by law.</p>
+    <p>Data received from Google APIs is retained strictly as necessary to support the calendar sync feature. We store encrypted OAuth authorization tokens to maintain active synchronization and reference IDs for events created by InvestKode AI so they can be updated or removed if rescheduled. We do not store or harvest the contents of your existing personal calendar events. Upon account deletion or calendar disconnection, stored OAuth tokens and event mappings are permanently deleted from our databases.</p>
+  </section>
+
+  <section>
+    <h2>7. Data Security</h2>
+    <p>We implement industry-standard security measures including encrypted data transmission (TLS), access controls, and regular security reviews. However, no method of transmission over the internet is completely secure. We encourage you to use a strong password and notify us immediately of any suspected unauthorized access.</p>
+  </section>
+
+  <section>
+    <h2>8. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your data</li>
+      <li>Revoke Google permissions at any time via your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account settings</a></li>
+      <li>Withdraw consent where processing is based on consent</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="mailto:IT@investkode.ai">IT@investkode.ai</a>.</p>
+  </section>
+
+  <section>
+    <h2>9. Cookies and Tracking</h2>
+    <p>We use essential cookies to maintain your session and preferences. We may use analytics tools to understand how the platform is used in aggregate. You can control cookie settings through your browser, though disabling essential cookies may affect platform functionality.</p>
+  </section>
+
+  <section>
+    <h2>10. Children's Privacy</h2>
+    <p>InvestKode AI is not directed at children under 18. We do not knowingly collect personal information from minors. If you believe a minor has provided us with personal data, please contact us and we will delete it promptly.</p>
+  </section>
+
+  <section>
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the "Last updated" date above and, where appropriate, by email. Continued use of InvestKode AI after changes constitutes acceptance of the revised policy.</p>
+  </section>
+
+  <section>
+    <h2>12. Governing Law</h2>
+    <p>This Privacy Policy is governed by the laws of India, including the Information Technology Act, 2000 and its rules. Any disputes shall be subject to the jurisdiction of courts in India.</p>
+  </section>
+
+  <div class="contact-block">
+    <p>Questions or privacy requests? Write to us at <a href="mailto:support@investkode.ai">support@investkode.ai</a></p>
+    <p style="margin-top:1rem;">
+      <a href="/pricing.html">Pricing</a> &nbsp;&middot;&nbsp;
+      <a href="/about.html">About Us</a> &nbsp;&middot;&nbsp;
+      <a href="/contact.html">Contact Us</a> &nbsp;&middot;&nbsp;
+      <a href="/terms.html">Terms of Service</a> &nbsp;&middot;&nbsp;
+      <a href="/refund-policy.html">Refund &amp; Cancellation Policy</a>
+    </p>
+    <p style="margin-top:1rem; padding-top:1rem; border-top:1px solid var(--border); font-size:0.8rem; line-height:1.7;">
+      InvestKode is operated by FinAI Global, A171, Brookhaven, JVLR, Mumbai 400060, India.<br>
+      InvestKode provides information and analysis tools only and does not provide investment advice. Investments in securities are subject to market risks.<br>
+      GSTIN: 27AALFF2002N1ZF &nbsp;&middot;&nbsp; &copy; 2026 FinAI Global. All rights reserved.
+    </p>
+  </div>
+
+</div>
+
+<script>
+  // ── Mobile Menu Toggle ──
+  const navToggle = document.getElementById('navToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  if (navToggle && mobileMenu) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      navToggle.classList.toggle('active', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+    document.addEventListener('click', (e) => {
+      if (!navToggle.contains(e.target) && !mobileMenu.contains(e.target) && mobileMenu.classList.contains('open')) {
+        mobileMenu.classList.remove('open');
+        navToggle.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+        mobileMenu.classList.remove('open');
+        navToggle.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // ── Professional Theme Toggler ──
+  (function initThemeToggle() {
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('ik-theme', next); } catch(e) {}
+    }
+    document.querySelectorAll('.theme-toggle').forEach(btn => {
+      btn.addEventListener('click', toggleTheme);
+    });
+  })();
+</script>
+</body>
+</html>
