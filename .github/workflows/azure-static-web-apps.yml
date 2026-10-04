@@ -30,6 +30,7 @@ jobs:
           app_location: "/" # App source code directory
           api_location: "" # Optional API location
           output_location: "" # Static HTML website root (no build folder)
+          skip_app_build: true
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
