@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://investkode.ai/sitemap.xml
+Sitemap: https://investkode.com/sitemap.xml

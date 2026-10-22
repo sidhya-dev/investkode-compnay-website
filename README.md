@@ -1,6 +1,6 @@
 # InvestKode AI — Official Company Website
 
-Welcome to the **InvestKode AI** company website codebase. This repository contains the static marketing, product presentation, pricing, and compliance/legal pages for [InvestKode AI](https://investkode.ai) (`https://investkodewebsite.z29.web.core.windows.net/`).
+Welcome to the **InvestKode AI** company website codebase. This repository contains the static marketing, product presentation, pricing, and compliance/legal pages for [InvestKode AI](https://investkode.com) (`https://investkodewebsite.z29.web.core.windows.net/`).
 
 ---
 
@@ -255,4 +255,4 @@ This website was built to pass strict payment gateway compliance audits (specifi
 
 - **Technical / IT Inquiries**: [IT@investkode.ai](mailto:IT@investkode.ai)
 - **General & Billing Support**: [support@investkode.ai](mailto:support@investkode.ai)
-- **Official Web App**: [https://app.investkode.ai](https://app.investkode.ai)
+- **Official Web App**: [https://app.investkode.com](https://app.investkode.com)
